@@ -5,7 +5,7 @@
     </head>
 <body>
     
-
+<!--kommentti esimerkki-->
 <p id="demo">JavaScript voi vaihtaa tekstin väriä.</p>
 
 <script>
@@ -15,7 +15,13 @@
     }
 </script>
 <button  onclick="color()" type="button">vaihda väriä</button>
-
+<p id="demo2">javascript voi vaihtaa tekstin sisältöä</p>
+<script>
+    function change(){
+        document.getElementById("demo2").innerHTML="esimerkiksi näin"
+    }
+</script>
+<button onclick="change()"type="button">vaihda tekstiä</button>
 
     <h1>Hello</h1>
     <h2>Hi</h2>
