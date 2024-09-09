@@ -51,6 +51,7 @@ document.getElementById("demo4").innerHTML = text;
 </script>
 
 <p id="demo5"></p>
+<p id="demo6"></p>
 
 <script>
         const animal = ["Koira", "Kissa", "Hevonen", "Marsu"];
@@ -72,8 +73,12 @@ document.getElementById("demo5").innerHTML = text1;
     function Fullname() {
         let Etunimi = document .getElementById("Etunimi").value
         let Sukunimi = document.getElementById("Sukunimi").value
-        var text = Etunimi +" " + Sukunimi
-        document.getElementById("Information").innerHTML = "Hei " + text
+        etusukunimi(Etunimi, Sukunimi)
+    }
+
+    function etusukunimi(Etunimi, Sukunimi) {
+        var text =Etunimi + " " + Sukunimi
+        document.getElementById("demo6").innerHTML = "Hei, " + text
     }
 </script>
 
