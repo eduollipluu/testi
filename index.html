@@ -23,6 +23,22 @@
 </script>
 <button onclick="change()"type="button">vaihda tekstiä</button>
 
+<p>oletko täysi-ikäinen:</p>
+
+<input id="ikä" value="0" />
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo3"></p>
+
+<script>
+function myFunction() {
+  let age = document.getElementById("ikä").value;
+  let adult = (age < 18) ? "alaikäinen":"täysi-ikäinen";
+  document.getElementById("demo3").innerHTML = voteable + " to vote.";
+}
+</script>
+
     <h1>Hello</h1>
     <h2>Hi</h2>
     <h3>Hey</h3>
