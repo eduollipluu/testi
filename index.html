@@ -25,20 +25,30 @@
 
 <p>oletko täysi-ikäinen:</p>
 
-<input id="ikä" value="0" />
+<input id="ikä" value="17" />
 
 <button onclick="myFunction()">Try it</button>
 
-<p id="demo3"></p>
+
 
 <script>
 function myFunction() {
   let age = document.getElementById("ikä").value;
   let adult = (age < 18) ? "alaikäinen":"täysi-ikäinen";
-  document.getElementById("demo3").innerHTML = voteable + " to vote.";
+  document.getElementById("demo3").innerHTML = adult + " henkilö.";
 }
-</script>
 
+let text = ""
+let i = 0;
+
+while (i < 5) {
+    text +"<br> huhuu?" + i;
+    i++;
+}  
+
+document.getElementById("demo3").innerHTML = text;
+</script>
+<p id="demo3"></p>
     <h1>Hello</h1>
     <h2>Hi</h2>
     <h3>Hey</h3>
