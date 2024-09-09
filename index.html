@@ -32,19 +32,19 @@
 
 <p id="demo3"></p>
 <script>
-function myFunction() {
-  let age = document.getElementById("ikä").value;
-  let adult = (age < 18) ? "alaikäinen":"täysi-ikäinen";
-  document.getElementById("demo3").innerHTML = adult + " henkilö.";
+    function myFunction() {
+        let age = document.getElementById("ikä").value;
+        let adult = (age < 18) ? "alaikäinen":"täysi-ikäinen";
+        document.getElementById("demo3").innerHTML = adult + " henkilö.";
 }
 </Script>
 <p id="demo4"></p>
 <script>
-let text = "";
-let i = 1;
-while (i < 6) {
-  text += "<br>Huhuu? " + i;
-  i++;
+        let text = "";
+        let i = 1;
+        while (i < 6) {
+        text += "<br>Huhuu? " + i;
+        i++;
 }
 document.getElementById("demo4").innerHTML = text;
 
@@ -53,17 +53,30 @@ document.getElementById("demo4").innerHTML = text;
 <p id="demo5"></p>
 
 <script>
-const animal = ["Koira", "Kissa", "Hevonen", "Marsu"];
+        const animal = ["Koira", "Kissa", "Hevonen", "Marsu"];
 
-let x = 0;
-let text1 = "";
-for (;animal[x];) {
-  text1 += animal[x] + "!" + "<br>" ;
-  x++;
+        let x = 0;
+        let text1 = "";
+        for (;animal[x];) {
+        text1 += animal[x] + "!" + "<br>" ;
+        x++;
 }
 
 document.getElementById("demo5").innerHTML = text1;
 </script>
+    <p>Etunimi: <input placeholder="Etunimi" type="text" id="Etunimi" required></p>
+    <p>Sukunimi <input placeholder="Sukunimi" type="text" id="Sukunimi" required></p>
+    <p><input onclick="Fullname()" type="submit"></p>
+    <p id="Information"></p>
+<script>
+    function Fullname() {
+        let Etunimi = document .getElementById("Etunimi").value
+        let Sukunimi = document.getElementById("Sukunimi").value
+        var text = Etunimi +" " + Sukunimi
+        document.getElementById("Information").innerHTML = "Hei " + text
+    }
+</script>
+
     <h1>Hello</h1>
     <h2>Hi</h2>
     <h3>Hey</h3>
