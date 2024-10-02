@@ -73,12 +73,12 @@ document.getElementById("demo5").innerHTML = text1;
     function Fullname() {
         let Etunimi = document .getElementById("Etunimi").value
         let Sukunimi = document.getElementById("Sukunimi").value
-        etusukunimi(Etunimi, Sukunimi)
+        document.getElementById("demo6").innerHTML = etusukunimi(Etunimi, Sukunimi)
     }
 
     function etusukunimi(Etunimi, Sukunimi) {
-        var text =Etunimi + " " + Sukunimi
-        document.getElementById("demo6").innerHTML = "Hei, " + text
+        let text =Etunimi + " " + Sukunimi
+        return "Hei, " + text
     }
 </script>
 
